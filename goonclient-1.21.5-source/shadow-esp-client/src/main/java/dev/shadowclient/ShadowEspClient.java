@@ -1,4 +1,3 @@
-```java
 package dev.shadowclient;
 
 import net.fabricmc.api.ClientModInitializer;
