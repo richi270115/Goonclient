@@ -28,12 +28,13 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: GoonClient bauen
-        working-directory: shadow-esp-client
+        working-directory: goonclient-1.21.5-source/shadow-esp-client
         run: gradle build
 
       - name: JAR-Datei bereitstellen
         uses: actions/upload-artifact@v4
         with:
           name: GoonClient-JAR
-          path: shadow-esp-client/build/libs/*.jar
+          path: goonclient-1.21.5-source/shadow-esp-client/build/libs/*.jar
           if-no-files-found: error
+
